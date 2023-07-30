@@ -1,0 +1,588 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bicyclette-Regular', sans-serif;
+}
+html{
+    overflow: hidden;
+}
+#fullpage{
+    display: block;
+    width: 200%;
+    box-sizing: border-box;
+}
+#cosmic-black-header-video{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+.nav-container{
+    position: fixed; 
+}
+.cosmic-logo{
+    position: absolute;
+    width: 100px;
+    height: 90px;
+    background:url('./images/logo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: -340px;
+    margin-left: 62px;
+}
+.menu-icon{
+    position: absolute;
+    width: 18px;
+    height: 8px;
+    margin-left: 1270px;
+    margin-top: -310px;
+}
+.section{
+    overflow: none;
+}
+.product-information-foreground{
+    background: url('./images/foreground-product.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 3;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+.product-information-middleground{
+    background: transparent url('./images/middle.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 2;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    box-shadow: 200px 200px 400px 200px rgba(0,0,0,0.4) inset;
+    -webkit-box-shadow: 200px 200px 400px 200px rgba(0,0,0,0.4) inset;
+    -moz-box-shadow: 200px 200px 400px 200px rgba(0,0,0,0.4) inset;
+}
+.product-information-background{
+    background: url('./images/background.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+.product-information-call-to-action{
+    font-family: 'Bicyclette-Regular';
+    src: url('fonts/Bicyclette-Regular.ttf') format('truetype');
+    font-weight: 400;
+    position: absolute;
+    margin-left: 570px;
+    margin-top: 340px;
+    width: 1100px;
+    height: 150px;
+    display: block;
+    color: white;
+    text-align: right;
+}
+.product-information-header{
+    margin-bottom: 24px;
+    font: normal normal bold 30px Brice;
+    color: #FEBB07;
+    margin-right: 350px;
+    font-weight: 900;
+    opacity: 1;
+}
+.product-information-sub-header{
+    margin-bottom: 24px;
+    font: normal normal bold 20px Bicyclette;
+    color:  #0DF3E3;
+    margin-right: 350px;
+    font-weight: 400;
+    opacity: 1;
+}
+.product-information-paragraph{
+    margin-bottom: 20px;
+    font: normal normal normal 28px/36px Bicyclette;
+    color: #FFFFFF;
+    margin-right: 350px;
+    font-size: 18px;
+    font-weight: 300;
+}
+.btn span.icon {
+    background: url(./images/eyes.png) no-repeat;
+    float: left;
+    width: 10px;
+    height: 40px;
+}
+.product-information-button{
+    padding: 10px;
+    border-radius: 3px;
+    border: 2px solid #D8FFFC;
+    box-shadow: 0px 1px 18px #00000033;
+    margin-right: 350px;
+    color: white;
+    background: #0DF3E3 0% 0% no-repeat padding-box;
+    text-decoration: none;
+    border: none;
+}
+.about-us-foreground{
+    background: url('./images/foreground-about.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 3;
+    width: 100vw;
+    height: 100vh;
+    margin-left: 45px;
+}
+.about-us-middleground{
+    background: url('./images/middle.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 2;
+    width: 100vw;
+    height: 100vh;
+    margin-left: 35px;
+   
+}
+.about-us-background{
+    background: url('./images/bottom.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+    box-shadow: 200px 200px 400px 200px rgba(0,0,0,0.65) inset;
+    -webkit-box-shadow: 200px 200px 400px 200px rgba(0,0,0,0.65) inset;
+    -moz-box-shadow: 200px 200px 400px 200px rgba(0,0,0,0.65) inset;
+}
+.about-us-call-to-action{
+    text-align: center;
+    position: absolute;
+    margin-left: 380px;
+    margin-top: 120px;
+}
+.about-us-header{
+    color: #FEBB07;
+    font-size: 24px;
+    font-weight: 900;
+    font: normal normal bold Brice;
+    margin-bottom: 24px;
+}
+.about-us-paragraph{
+    color: white;
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 24px;
+}
+.about-us-anchor{
+    padding: 10px;
+    padding-right: 30px;
+    padding-left: 30px;
+    border: 2px solid #D8FFFC;
+    box-shadow: 0px 1px 18px #00000033;
+    color: white;
+    background: #0DF3E3 0% 0% no-repeat padding-box;
+    text-decoration: none;
+    letter-spacing: 2px;
+    border-radius: 2px;
+    border: none;
+}
+.grisly-lore-foreground{
+    background: url('./images/foreground-grisly-lore.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 3000;
+    width: 100vw;
+    height: 100vh;
+    margin-left: 300px;
+}
+.grisly-lore-middleground{
+    position: absolute;
+    background: url('./images/middle-grisly-lore.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 2000;
+    width: 100vw;
+    height: 100vh;
+    box-shadow: 200px 200px 400px 200px rgba(0,0,0,0.44) inset;
+    -webkit-box-shadow: 200px 200px 400px 200px rgba(0,0,0,0.44) inset;
+    -moz-box-shadow: 200px 200px 400px 200px rgba(0,0,0,0.44) inset;
+}
+.grisly-lore-background{
+    position: absolute;
+    background: url('./images/background-grisly-lore.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    box-shadow: 200px 200px 400px 200px rgba(0,0,0,0.7) inset;
+    -webkit-box-shadow: 200px 200px 400px 200px rgba(0,0,0,0.7) inset;
+    -moz-box-shadow: 200px 200px 400px 200px rgba(0,0,0,0.7) inset;
+}
+.grisly-lore-to-action{
+    position: absolute;
+    text-align: left;
+    margin-top: 70px;
+    margin-left: -100px;   
+}
+.grisly-lore-header{
+    color: #FEBB07;
+    font-size: 24px;
+    font-weight: 900;
+    font: normal normal bold Brice;
+    margin-bottom: 24px; 
+}
+.grisly-lore-paragraph-1{
+    margin-bottom: 220px;
+    font: normal normal normal 28px/36px Bicyclette;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 300; 
+}
+.grisly-lore-paragraph-2{
+    margin-bottom: 20px;
+    font: normal normal normal 28px/36px Bicyclette;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 300; 
+}
+.grisly-lore-anchor{
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 2px solid #D8FFFC;
+    box-shadow: 0px 1px 18px #00000033;
+    color: white;
+    background: #0DF3E3 0% 0% no-repeat padding-box;
+    text-decoration: none;
+    border: none;
+    border-radius: 2px;  
+}
+.foreground-container{
+    margin-top: 190px;
+}
+.find-us-foreground{
+    position: absolute;
+    background: url('./images/foreground-find-us.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1200;
+    width: 100vw;
+    height: 100vh;
+    margin-top: 100;
+    max-width: 1300px;
+    max-height: 500px;
+    margin-left: 50px;
+    overflow: none;
+}
+.find-us-middleground{
+    position: absolute;
+    background: url('./images/middle-find-us.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 600;
+    width: 100vw;
+    height: 100vh;
+    margin-left: 40px;
+    overflow: none;
+    box-shadow: 200px 200px 400px 200px rgba(0,0,0,0.56) inset;
+    -webkit-box-shadow: 200px 200px 400px 200px rgba(0,0,0,0.56) inset;
+    -moz-box-shadow: 200px 200px 400px 200px rgba(0,0,0,0.56) inset;
+}
+.find-us-background{
+    position: absolute;
+    background: url('./images/background-find-us.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    overflow: none;
+    margin-left: 0px;
+    box-shadow: 200px 200px 400px 200px rgba(0,0,0,0.4) inset;
+    -webkit-box-shadow: 200px 200px 400px 200px rgba(0,0,0,0.4) inset;
+    -moz-box-shadow: 200px 200px 400px 200px rgba(0,0,0,0.4) inset;
+    object-fit: cover;
+}
+.find-us-call-to-action{
+    position: absolute;
+    text-align: right;
+    justify-content: right;
+    margin-left: 950px;
+    margin-top: -50px;
+}
+.find-us-button-container{
+    display: block;
+    justify-content: center;
+}
+.find-us-header{
+    color: #FEBB07;
+    font-size: 24px;
+    font-weight: 900;
+    font: normal normal bold Brice;
+    margin-bottom: 24px;
+}
+.find-us-anchor-1{
+    padding: 15px;
+    padding-left: 20px;
+    padding-right: 130px;
+    border: 2px solid #D8FFFC;
+    box-shadow: 0px 1px 18px #00000033;
+    color: white;
+    background: #0DF3E3 0% 0% no-repeat padding-box;
+    text-decoration: none;
+    justify-content: space-between;  
+}
+.find-us-anchor-1 img{
+    position: absolute;
+}
+.find-us-anchor-2{
+    padding: 15px;
+    padding-left: 20px;
+    padding-right: 115px;
+    border: 2px solid #D8FFFC;
+    box-shadow: 0px 1px 18px #00000033;
+    color: white;
+    background: #FC2452 0% 0% no-repeat padding-box;
+    text-decoration: none;  
+}
+.find-us-anchor-3{
+    padding: 15px;
+    padding-left: 20px;
+    padding-right: 100px;
+    border: 2px solid #D8FFFC;
+    box-shadow: 0px 1px 18px #00000033;
+    color: white;
+    background: #4FBDFC 0% 0% no-repeat padding-box;
+    text-decoration: none;  
+}
+.find-us-anchor-4{
+    padding: 15px;
+    padding-left: 20px;
+    padding-right: 80px;
+    border: 2px solid #D8FFFC;
+    box-shadow: 0px 1px 18px #00000033;
+    color: white;
+    background: #FF03C9 0% 0% no-repeat padding-box;
+    text-decoration: none;  
+}
+.alcoholism-resources-foreground{
+    position: absolute;
+    background: url('./images/foreground-alcoholism-resources.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 3000;
+    /*width: 100vw;
+    height: 100%;*/
+    width: 45vw;
+    height: 100vh;
+    margin-left: 1070px;
+    margin-top: 0px;
+    overflow: none;
+}
+.alcoholism-resources-middleground{
+    position: absolute;
+    background: url('./images/middle-alcoholism-resources.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 2000;
+    width: 100vw;
+    height: 100vh;
+    margin-left: -500px;
+    max-width: 600px;
+    max-height: 600px;
+    margin-left: -150px;
+    margin-top: 100px;
+}
+.alcoholism-resources-background{
+    position: absolute;
+    background: url('./images/background-alcoholism-resources.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    overflow: none;
+    object-fit: contain;
+}
+.alcoholism-resources-call-to-action{
+    position: absolute;
+    margin-left: -450px;
+    margin-top: 350px;
+}
+.alcoholism-resources-header{
+    color: #FEBB07;
+    font-size: 24px;
+    font-weight: 900;
+    font: normal normal bold Brice;
+    margin-bottom: 24px; 
+}
+.alcoholism-resources-paragraph{
+    font-size: 18px;
+    font-weight: 300;
+    color: #000000;
+}
+.follow-us-foreground{
+    background: url('./images/foreground-follow-us.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 3000;
+    width: 100vw;
+    height: 100vh;
+    margin-left: 30px;
+}
+.follow-us-middleground{
+    background: url('./images/middle-follow-us.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 2000;
+    width: 100vw;
+    height: 100vh;
+    margin-left: 30px;
+}
+.follow-us-background{
+    background: url('./images/background-follow-us.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    padding-top: -120px;
+}
+.follow-footer-container{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    margin-top: 660px;
+}
+.copyright-left{
+    margin-left: 75px;
+}
+.footer-anchors{
+    margin-left: 180px;
+}
+
+/*****************************Tablet Responsive********************************/
+@media(max-width: 768px){
+    .section-2{
+        position: absolute;
+        box-shadow: 200px 200px 400px 200px rgba(0,0,0,0.56) inset;
+        -webkit-box-shadow: 200px 200px 400px 200px rgba(0,0,0,0.56) inset;
+        -moz-box-shadow: 200px 200px 400px 200px rgba(0,0,0,0.56) inset;
+    }
+    .product-information-foreground{
+        position: absolute;
+        z-index: 999999;
+        width: 110vw;
+        height: 100vh;
+        margin-top: 150px;
+    }
+    .product-information-call-to-action{
+        margin-left: 50px;
+        margin-top: 10px;
+        font-size: 24px;
+    }
+    .section-3{
+        box-shadow: 200px 200px 400px 200px rgba(0,0,0,0.25) inset;
+        -webkit-box-shadow: 200px 200px 400px 200px rgba(0,0,0,0.25) inset;
+        -moz-box-shadow: 200px 200px 400px 200px rgba(0,0,0,0.25) inset;
+    }
+    .about-us-foreground{
+        background-size: cover;
+    }
+    .about-us-middleground{
+        background-size: cover;
+    }
+    .about-us-background{
+        background-size: cover;
+    }
+    .about-us-call-to-action{
+        margin-left: 80px;
+    }
+    .grisly-lore-foreground{
+        box-shadow: 200px 200px 400px 200px rgba(0,0,0,0.05) inset;
+        -webkit-box-shadow: 200px 200px 400px 200px rgba(0,0,0,0.05) inset;
+        -moz-box-shadow: 200px 200px 400px 200px rgba(0,0,0,0.05) inset;   
+    }
+    .grisly-lore-paragraph-1{
+        margin-bottom: 180px;
+        margin-top: -30px;
+    }
+    .find-us-call-to-action{
+        margin-left: 280px;
+        margin-top: -50px;
+    }
+    .alcoholism-resources-call-to-action{
+        margin-left: -550px;
+        margin-top: 300px;
+    }
+    .follow-us-foreground{
+        background-size: cover;
+    }
+    .follow-us-middleground{
+        background-size: cover;
+    }
+    .follow-us-background{
+        background-size: cover;
+    }
+}
+/***********************************Mobile Responsive****************************************/
+@media(max-width: 480px){
+    .product-information-call-to-action{
+        background-size: contain;
+        position: absolute;
+        margin-left: 50px;
+        width: 850px;
+        height: 550px;
+        z-index: 999999;
+        margin-bottom: -200px;
+    }
+    .grisly-lore-to-action{
+        position: relative;
+        margin-left: -120px;
+        width: 300px; 
+    }
+    .anchor{
+        margin-left: -200px;
+    }
+    .find-us-foreground{
+        margin-top: 200px;
+    }
+    .find-us-call-to-action{
+        position: absolute;
+        margin-left: 180px;
+        margin-top: -300px;
+    }
+    .alcoholism-resources-foreground{
+        position: absolute;
+        background-size: contain;
+        width: 350px;
+        height: 250px;
+        margin-left: -80px;
+        margin-top: 380px;
+    }
+    .alcoholism-resources-middleground{
+        width: 400px;
+        height: 400px;
+        margin-left: 650px;
+    }
+    .alcoholism-resources-background{
+        position: absolute;
+        background-size: cover;
+        margin-left: -350px;
+        margin-top: -50px;
+        width: 700px;
+    }
+    .alcoholism-resources-call-to-action{
+        margin-left: -80px;
+        margin-top: -240px;
+        width: 350px;
+    }
+    .find-us-foreground{
+        position: absolute;
+        background-size: contain;
+        margin-bottom: -300px;
+    }
+}

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="66" height="56" viewBox="0 0 66 56">
+  <defs>
+    <filter id="Rectangle_410" x="0" y="0" width="66" height="24" filterUnits="userSpaceOnUse">
+      <feOffset dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.2"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_411" x="0" y="16" width="66" height="24" filterUnits="userSpaceOnUse">
+      <feOffset dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-2"/>
+      <feFlood flood-opacity="0.2"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_412" x="0" y="32" width="66" height="24" filterUnits="userSpaceOnUse">
+      <feOffset dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-3"/>
+      <feFlood flood-opacity="0.2"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="menu" transform="translate(-1650 -46)">
+    <g transform="matrix(1, 0, 0, 1, 1650, 46)" filter="url(#Rectangle_410)">
+      <rect id="Rectangle_410-2" data-name="Rectangle 410" width="48" height="6" rx="3" transform="translate(9 7)" fill="#fff"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 1650, 46)" filter="url(#Rectangle_411)">
+      <rect id="Rectangle_411-2" data-name="Rectangle 411" width="48" height="6" rx="3" transform="translate(9 23)" fill="#fff"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 1650, 46)" filter="url(#Rectangle_412)">
+      <rect id="Rectangle_412-2" data-name="Rectangle 412" width="48" height="6" rx="3" transform="translate(9 39)" fill="#fff"/>
+    </g>
+  </g>
+</svg>
